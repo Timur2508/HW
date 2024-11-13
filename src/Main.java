@@ -38,10 +38,10 @@ public class Main {
         System.out.println("Задача № 3");
 
         short totalNumberOfSheets = 480;
-        byte numberОfLyudmilaPavlovnaStudents = 23;
-        byte numberОfAnnaSergeevnaStudents = 27;
-        byte numberОfEkaterinaAndreevnaStudents = 30;
-        int totalStudents = numberОfLyudmilaPavlovnaStudents + numberОfAnnaSergeevnaStudents + numberОfEkaterinaAndreevnaStudents;
+        byte LyudmilaPavlovnaStudents = 23;
+        byte AnnaSergeevnaStudents = 27;
+        byte EkaterinaAndreevnaStudents = 30;
+        int totalStudents = LyudmilaPavlovnaStudents + AnnaSergeevnaStudents + EkaterinaAndreevnaStudents;
         int numberOfSheetsForEachStudent = totalNumberOfSheets / totalStudents;
         System.out.println("На каждого ученика рассчитано  " + numberOfSheetsForEachStudent + " листов бумаги");
 
@@ -65,9 +65,9 @@ public class Main {
 
         System.out.println("Задача № 5");
 
-        Byte totalNumberOfPaintCansForClasses = 120;
-        Byte quantityOfWhitePaintPerClass = 2;
-        Byte quantityOfBrownPaintPerClass = 4;
+        byte totalNumberOfPaintCansForClasses = 120;
+        byte quantityOfWhitePaintPerClass = 2;
+        byte quantityOfBrownPaintPerClass = 4;
         int totalNumberOfPaintCansPerOneClass = quantityOfWhitePaintPerClass + quantityOfBrownPaintPerClass;
         int numberOfClasses = totalNumberOfPaintCansForClasses / totalNumberOfPaintCansPerOneClass;
         int totalAmountOfWhitePaintForAllClasses = numberOfClasses * quantityOfWhitePaintPerClass;
@@ -76,12 +76,12 @@ public class Main {
 
         System.out.println("Задача № 6");
 
-        Byte bananas = 5;
-        Byte gramsInOneBanana = 80;
+        byte bananas = 5;
+        byte gramsInOneBanana = 80;
 
         short milk = 200;
-        Byte halfServingOfMilk = 100;
-        Byte gramsIn100MillilitersOfMilk = 105;
+        byte halfServingOfMilk = 100;
+        byte gramsIn100MillilitersOfMilk = 105;
         int amountOfMilkNeeded = milk / halfServingOfMilk;
 
         Byte IceCreamBriquettes = 2;
@@ -103,7 +103,7 @@ public class Main {
 
         System.out.println("Задача № 7");
 
-        Byte totalNumberOfKgForWeightLoss = 7;
+        byte totalNumberOfKgForWeightLoss = 7;
         short totalNumberOfGramsInKilogram = 1000;
         int totalGramsForWeightLoss = 7 * 1000;
         short firstWayToLoseWeight = 250;
@@ -133,7 +133,6 @@ public class Main {
         System.out.println(amountOf10PercentOfDenisCurrentSalary);
         System.out.println(amountOf10PercentOfChristinaCurrentSalary);
 
-
         float mashaSalaryPerMonthAfterTheIncrease = mashaCurrentSalaryPerMonth + amountOf10PercentOfMashaCurrentSalary;
         float denisSalaryPerMonthAfterTheIncrease = denisSalaryCurrentPerMonth + amountOf10PercentOfDenisCurrentSalary;
         float christinaSalaryPerMonthAfterTheIncrease = christinaSalaryCurrentPerMonth + amountOf10PercentOfChristinaCurrentSalary;
@@ -141,7 +140,6 @@ public class Main {
         System.out.println(mashaSalaryPerMonthAfterTheIncrease);
         System.out.println(denisSalaryPerMonthAfterTheIncrease);
         System.out.println(christinaSalaryPerMonthAfterTheIncrease);
-
 
         byte month = 12;
         double AnnualIncomeOfMashaAfterTheIncrease = mashaSalaryPerMonthAfterTheIncrease * month;
@@ -151,7 +149,6 @@ public class Main {
         System.out.println(AnnualIncomeOfMashaAfterTheIncrease);
         System.out.println(AnnualIncomeOfDenisAfterTheIncrease);
         System.out.println(AnnualIncomeOfChristinaAfterTheIncrease);
-
 
         int MashaAnnualIncomeBeforeTheIncrease = mashaCurrentSalaryPerMonth * month;
         int DenisAnnualIncomeBeforeTheIncrease = denisSalaryCurrentPerMonth * month;
