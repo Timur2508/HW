@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание");
 
-
         System.out.println("Задача №1");
 
         int a = 62000;
@@ -38,41 +37,40 @@ public class Main {
         System.out.println("Задача № 3");
 
         short totalNumberOfSheets = 480;
-        byte LyudmilaPavlovnaStudents = 23;
-        byte AnnaSergeevnaStudents = 27;
-        byte EkaterinaAndreevnaStudents = 30;
-        int totalStudents = LyudmilaPavlovnaStudents + AnnaSergeevnaStudents + EkaterinaAndreevnaStudents;
+        byte lyudmilaPavlovnaStudents = 23;
+        byte annaSergeevnaStudents = 27;
+        byte ekaterinaAndreevnaStudents = 30;
+        int totalStudents = lyudmilaPavlovnaStudents + annaSergeevnaStudents + ekaterinaAndreevnaStudents;
         int numberOfSheetsForEachStudent = totalNumberOfSheets / totalStudents;
         System.out.println("На каждого ученика рассчитано  " + numberOfSheetsForEachStudent + " листов бумаги");
 
         System.out.println("Задача № 4");
 
-        byte capacityOfBottleMakingMachineIn2Minutes = 16;
-        byte t1 = 20;
-        short t2 = 1440;
-        short t3 = 1440 * 3;
-        int t4 = 1440 * 30;
-        byte capacityOfBottleMakingMachineIn1Minutes = 16 / 2;
-        System.out.println("За 1 минуту  машина произвела  " + capacityOfBottleMakingMachineIn1Minutes + "  штук бутылок");
-        int capacityOfBottleMakingMachineIn20Minutes = capacityOfBottleMakingMachineIn1Minutes * t1;
-        System.out.println("За 20 минут машина произвела  " + capacityOfBottleMakingMachineIn20Minutes + " штук бутылок");
-        int capacityOfBottleMakingMachineIn1440Minutes = capacityOfBottleMakingMachineIn1Minutes * t2;
-        System.out.println("За 1440 минут (сутки) машина произвела  " + capacityOfBottleMakingMachineIn1440Minutes + " штук бутылок");
-        int capacityOfBottleMakingMachineIn4320Minutes = capacityOfBottleMakingMachineIn1Minutes * t3;
-        System.out.println("За 4320 минут (3 дня)  машина произвела  " + capacityOfBottleMakingMachineIn4320Minutes + " штук бутылок");
-        int capacityOfBottleMakingMachineIn43200Minutes = capacityOfBottleMakingMachineIn1Minutes * t4;
-        System.out.println("За  43200 минут (30 дней) машина произвела  " + capacityOfBottleMakingMachineIn43200Minutes + " штук бутылок");
+        byte minutesDayMakingMachine = 20;
+        short minutesDayMakingMachine1 = 1440;
+        short minutesDayMakingMachine2 = 1440 * 3;
+        int minutesDayMakingMachine3 = 1440 * 30;
+        byte makingMachineInMinutes = 16 / 2;
+        System.out.println("За 1 минуту  машина произвела  " + makingMachineInMinutes + "  штук бутылок");
+        int makingMachineIn20Minutes = makingMachineInMinutes * minutesDayMakingMachine;
+        System.out.println("За 20 минут машина произвела  " + makingMachineIn20Minutes + " штук бутылок");
+        int makingMachineIn1440Minutes = makingMachineInMinutes * minutesDayMakingMachine1;
+        System.out.println("За 1440 минут (сутки) машина произвела  " + makingMachineIn1440Minutes + " штук бутылок");
+        int makingMachineIn4320Minutes = makingMachineInMinutes * minutesDayMakingMachine2;
+        System.out.println("За 4320 минут (3 дня)  машина произвела  " + makingMachineIn4320Minutes + " штук бутылок");
+        int makingMachineIn43200Minutes = makingMachineInMinutes * minutesDayMakingMachine3;
+        System.out.println("За  43200 минут (30 дней) машина произвела  " + makingMachineIn43200Minutes + " штук бутылок");
 
         System.out.println("Задача № 5");
 
-        byte totalNumberOfPaintCansForClasses = 120;
-        byte quantityOfWhitePaintPerClass = 2;
-        byte quantityOfBrownPaintPerClass = 4;
-        int totalNumberOfPaintCansPerOneClass = quantityOfWhitePaintPerClass + quantityOfBrownPaintPerClass;
-        int numberOfClasses = totalNumberOfPaintCansForClasses / totalNumberOfPaintCansPerOneClass;
-        int totalAmountOfWhitePaintForAllClasses = numberOfClasses * quantityOfWhitePaintPerClass;
-        int totalAmountOfBrownPaintForAllClasses = numberOfClasses * quantityOfBrownPaintPerClass;
-        System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + totalAmountOfWhitePaintForAllClasses + " банок белой краски и " + totalAmountOfBrownPaintForAllClasses + " банок коричневой краски");
+        byte paintCansForClasses = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        int paintCansPerOneClass = whitePaintPerClass + brownPaintPerClass;
+        int numberOfClasses = paintCansForClasses / paintCansPerOneClass;
+        int whitePaintForAllClasses = numberOfClasses * whitePaintPerClass;
+        int brownPaintForAllClasses = numberOfClasses * brownPaintPerClass;
+        System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + whitePaintForAllClasses + " банок белой краски и " + brownPaintForAllClasses + " банок коричневой краски");
 
         System.out.println("Задача № 6");
 
@@ -84,7 +82,7 @@ public class Main {
         byte gramsIn100MillilitersOfMilk = 105;
         int amountOfMilkNeeded = milk / halfServingOfMilk;
 
-        Byte IceCreamBriquettes = 2;
+        Byte iceCreamBriquettes = 2;
         Byte oneBriquetteOfFrozenGrams = 100;
 
         Byte rawEggs = 4;
@@ -92,7 +90,7 @@ public class Main {
 
         int numberOfGramsInFiveBananas = bananas * gramsInOneBanana;
         int numberOfGramsIn200MlOfMilk = amountOfMilkNeeded * gramsIn100MillilitersOfMilk;
-        int numberOfGramsIn2IceCreamBriquettes = IceCreamBriquettes * oneBriquetteOfFrozenGrams;
+        int numberOfGramsIn2IceCreamBriquettes = iceCreamBriquettes * oneBriquetteOfFrozenGrams;
         int numberOfGramsIn4RawEggs = rawEggs * numberOfGramsInOneRawEgg;
         int totalGramsInBreakfast = numberOfGramsInFiveBananas + numberOfGramsIn200MlOfMilk + numberOfGramsIn2IceCreamBriquettes + numberOfGramsIn4RawEggs;
         float totalGramInKg = 1000f;
@@ -142,26 +140,26 @@ public class Main {
         System.out.println(christinaSalaryPerMonthAfterTheIncrease);
 
         byte month = 12;
-        double AnnualIncomeOfMashaAfterTheIncrease = mashaSalaryPerMonthAfterTheIncrease * month;
-        double AnnualIncomeOfDenisAfterTheIncrease = denisSalaryPerMonthAfterTheIncrease * month;
-        double AnnualIncomeOfChristinaAfterTheIncrease = christinaSalaryPerMonthAfterTheIncrease * month;
+        double annualIncomeOfMashaAfterTheIncrease = mashaSalaryPerMonthAfterTheIncrease * month;
+        double annualIncomeOfDenisAfterTheIncrease = denisSalaryPerMonthAfterTheIncrease * month;
+        double annualIncomeOfChristinaAfterTheIncrease = christinaSalaryPerMonthAfterTheIncrease * month;
         System.out.println("Годовая зарплата сотрудников после повышения: Маши, Дениса, Кристины соответсвенно");
-        System.out.println(AnnualIncomeOfMashaAfterTheIncrease);
-        System.out.println(AnnualIncomeOfDenisAfterTheIncrease);
-        System.out.println(AnnualIncomeOfChristinaAfterTheIncrease);
+        System.out.println(annualIncomeOfMashaAfterTheIncrease);
+        System.out.println(annualIncomeOfDenisAfterTheIncrease);
+        System.out.println(annualIncomeOfChristinaAfterTheIncrease);
 
-        int MashaAnnualIncomeBeforeTheIncrease = mashaCurrentSalaryPerMonth * month;
-        int DenisAnnualIncomeBeforeTheIncrease = denisSalaryCurrentPerMonth * month;
-        int ChristinaAnnualIncomeBeforeTheIncrease = christinaSalaryCurrentPerMonth * month;
+        int mashaAnnualIncomeBeforeTheIncrease = mashaCurrentSalaryPerMonth * month;
+        int denisAnnualIncomeBeforeTheIncrease = denisSalaryCurrentPerMonth * month;
+        int christinaAnnualIncomeBeforeTheIncrease = christinaSalaryCurrentPerMonth * month;
         System.out.println("Годовая зарплата сотрудников до повышения: Маши, Дениса, Кристины соответсвенно");
-        System.out.println(MashaAnnualIncomeBeforeTheIncrease);
-        System.out.println(DenisAnnualIncomeBeforeTheIncrease);
-        System.out.println(ChristinaAnnualIncomeBeforeTheIncrease);
+        System.out.println(mashaAnnualIncomeBeforeTheIncrease);
+        System.out.println(denisAnnualIncomeBeforeTheIncrease);
+        System.out.println(christinaAnnualIncomeBeforeTheIncrease);
 
         System.out.println("Разница между годовыми зарплатами сотрудников до повышения и после: Маши, Дениса, Кристины соответсвенно");
-        double differenceBetweenMashaAnnualSalaryBeforeThePromotionAndAfter = AnnualIncomeOfMashaAfterTheIncrease - MashaAnnualIncomeBeforeTheIncrease;
-        double differenceBetweenDenisAnnualSalaryBeforeThePromotionAndAfter = AnnualIncomeOfDenisAfterTheIncrease - DenisAnnualIncomeBeforeTheIncrease;
-        double differenceBetweenChristinaAnnualSalaryBeforeThePromotionAndAfter = AnnualIncomeOfChristinaAfterTheIncrease - ChristinaAnnualIncomeBeforeTheIncrease;
+        double differenceBetweenMashaAnnualSalaryBeforeThePromotionAndAfter = annualIncomeOfMashaAfterTheIncrease - mashaAnnualIncomeBeforeTheIncrease;
+        double differenceBetweenDenisAnnualSalaryBeforeThePromotionAndAfter = annualIncomeOfDenisAfterTheIncrease - denisAnnualIncomeBeforeTheIncrease;
+        double differenceBetweenChristinaAnnualSalaryBeforeThePromotionAndAfter = annualIncomeOfChristinaAfterTheIncrease - christinaAnnualIncomeBeforeTheIncrease;
         System.out.println(differenceBetweenMashaAnnualSalaryBeforeThePromotionAndAfter);
         System.out.println(differenceBetweenDenisAnnualSalaryBeforeThePromotionAndAfter);
         System.out.println(differenceBetweenChristinaAnnualSalaryBeforeThePromotionAndAfter);
